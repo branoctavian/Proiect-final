@@ -1,0 +1,93 @@
+{
+    "utilizatori": [
+        {
+            "nume": "Bran Octavian",
+            "email": "branoctavian@yahoo.com",
+            "detalii": "str. Castanilor 1B, Bacau",
+            "data inregistrare": "2022-10-23 15:58:47.172880"
+        },
+        {
+            "nume": "Ion Popescu",
+            "email": "ionpopescu@gmail.com",
+            "detalii": "str. Ciberneticii 2A, Iasi",
+            "data inregistrare": "2022-10-23 15:59:34.184882"
+        },
+        {
+            "nume": "Ioan Iliescu",
+            "email": "ioaniliescu@gmail.com",
+            "detalii": "str. Mihail Kogalniceanu 3C, Iasi",
+            "data inregistrare": "2022-10-23 16:00:49.836811"
+        }
+    ],
+    "produse": {
+        "1c7633f7777420120ebcfff3f9023bd8": {
+            "nume produs": "arme",
+            "pret": 10,
+            "cantitate": 99,
+            "data inregistrare": "2022-05-23 12:54:05.282508"
+        },
+        "68829d6339d1ac86aae2fb46d97a19de": {
+            "nume produs": "incarcator",
+            "pret": 10,
+            "cantitate": 100,
+            "data inregistrare": "2022-05-23 12:55:28.376973"
+        },
+        "76dd1d8eb7223710a4d1bdc87d121d16": {
+            "nume produs": "telefon",
+            "pret": 10,
+            "cantitate": 100,
+            "data inregistrare": "2022-05-23 12:56:21.083210"
+        },
+        "11aa0e36ed724fa68df19b63fb46c3ed": {
+            "nume produs": "ceas",
+            "pret": 10,
+            "cantitate": 100,
+            "data inregistrare": "2022-05-23 12:56:35.989429"
+        },
+        "94e4be15c33feb906fd350f14a49e33e": {
+            "nume produs": "masini",
+            "pret": 10,
+            "cantitate": 100,
+            "data inregistrare": "2022-05-23 21:33:05.737298"
+        },
+        "b00cf835b58b5e0dbe5c451980c636d0": {
+            "nume produs": "gaini",
+            "pret": 10,
+            "cantitate": 100,
+            "data inregistrare": "2022-05-23 21:35:56.591117"
+        },
+        "346c50d389c99b30cac84368c1cdd8db": {
+            "nume produs": "tablete",
+            "pret": 10,
+            "cantitate": 100,
+            "data inregistrare": "2022-05-23 21:36:10.309119"
+        }
+    },
+    "comenzi": {
+        "eb5a9d41b2252bbf7f10aa40b8583dbe": {
+            "id_comanda": "eb5a9d41b2252bbf7f10aa40b8583dbe",
+            "data_inregistrare": "2022-05-24 11:27:02.276912",
+            "detalii_comanda": [
+                {
+                    "1c7633f7777420120ebcfff3f9023bd8": 1
+                }
+            ],
+            "total_plata": 10,
+            "data ultimei modificari": "2022-05-25 12:02:29.991484"
+        },
+        "f3975b3eeeb25452ed7adb60694df925": {
+            "id_comanda": "f3975b3eeeb25452ed7adb60694df925",
+            "data_inregistrare": "2022-05-24 12:00:19.228779",
+            "detalii_comanda": [
+                {
+                    "94e4be15c33feb906fd350f14a49e33e": 0
+                },
+                {
+                    "11aa0e36ed724fa68df19b63fb46c3ed": 0
+                }
+            ],
+            "total_plata": 0,
+            "data ultimei modificari": "2022-05-25 11:38:03.907531"
+        }
+    }
+}

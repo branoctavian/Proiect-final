@@ -1,0 +1,59 @@
+{% extends 'index.html' %}
+{% block title %}
+{% endblock %}
+{% block content %}
+<ul>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nr. crt</th>
+          <th scope="col">Nume si preume</th>
+          <th scope="col">Adresa de email</th>
+          <th scope="col">Detalii</th>
+          <th scope="col">Stergere</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for utilizator in lista_utilizatori %}
+            <tr>
+              <th scope="row">{{utilizator.nr_crt}}</th>
+              <td>{{utilizator.nume}}</td>
+              <td>{{utilizator.email}}</td>
+              <td>{{utilizator.detalii}}</td>
+              <td>
+                <form method="POST" action="{% url 'stergere_utilizator' %}">
+                    {% csrf_token %}
+                    <input type="hidden" class="form-control" name="numedesters" id="numedesters" value="{{utilizator.nume}}">
+                    <button class="w-50 btn btn btn-danger" type="submit">Stergere Utilizator</button>
+                </form>
+              </td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+
+<!--    Adauga Utilizator-->
+<div class="container-fluid">
+  <form method="POST" action="{% url 'adauga_utilizator' %}">
+    {% csrf_token %}
+        <legend>Adauga Utilizator</legend>
+        <div class="mb-3">
+          <label for="numeUtilizator" class="form-label">Nume:</label>
+          <input type="text" class="form-control" name="numeUtilizator" id="numeUtilizator" placeholder="Nume Utilizator">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <label for="detalii" class="form-label">Detalii</label>
+          <input type="text" class="form-control" id="detalii" name="detalii" placeholder="detalii">
+        </div>
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Adauga Utilizator</button>
+    </form>
+</div>
+{% endblock %}
+</ul>
