@@ -84,7 +84,7 @@ def listacomenzi(request):
 def signin(request):
     username = request.POST.get('floatingInput')
     password = request.POST.get('floatingPassword')
-    if username == "admin@admin" and password == "adminpass":
+    if username == "admin@admin" and password == "admin":
         return view_listeaza_toti_utilizatorii(request)
 
 
